@@ -426,15 +426,11 @@ $fw-3:800;
                .S {
                   
                   color: $neutral-blue;
+                  border-bottom: 5px solid $primay-red ;
 
                  
                }
-               .S::before {
-                  content: ' ';
-                  color: $primay-red;
-                  text-decoration: underline;
-                
-               }
+               
                
             }
 
@@ -903,6 +899,11 @@ $fw-3:800;
                      font-size: 1rem;
                      text-transform: capitalize;
                      color: #fff;
+                     cursor: pointer;
+
+                     &:hover {
+                        background-color: $primary;
+                     }
 
 
                      @media screen and (max-width:769px) {
@@ -916,5 +917,122 @@ $fw-3:800;
 
                }
 
+            }
+            .footer {
+               background-color: $neutral-blue;
+               margin-top: 0;
+             
+             
+               
+            
+                  .container {
+             padding-top: 1rem;
+             display: grid;
+             justify-content: space-between;
+             align-items: center;
+             padding-bottom: 2rem;
+             grid-template-columns: 1fr 1fr 1fr;
+
+
+
+
+
+
+@media screen and (max-width:980px) {
+   display: grid;
+   grid-template-columns: 1fr;
+  align-items: center;
+   text-align: center;
+padding-top: 2rem;
+      
+   }
+                  }
+
+
+
+
+
+               .logo {
+                  display: flex;
+                  padding-left: 1rem;
+                  
+                  align-items: center;    
+
+@media screen and (max-width:980px){
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   text-align: center;
+   padding-bottom: 1rem;
+      
+   }
+               
+                  
+               }
+
+              
+
+
+               .nav {
+                  display: flex;
+                  gap: .5rem;
+               
+                  
+                  
+
+
+                  
+                  @media screen and (max-width:980px){
+                     display: flex;
+                     text-align: center;
+                     flex-direction: column;
+                     gap: 1rem;
+                     
+                        
+                     }
+
+                  a{
+                     color: #fff;
+                    text-align: center;
+                     text-transform: uppercase;
+                        
+                       &:hover {
+                    color: $primay-red;
+               }
+
+                     
+                  }
+             
+
+               }
+               .icons {
+                  
+                  display: flex;
+                  text-align: center;
+                  gap:1rem;
+                
+
+
+                  @media screen and (max-width:980px){
+                     display: flex;
+                     padding-top: 1rem;
+                     flex-direction: column;
+                   
+
+                        
+                     }
+
+                     
+                  
+                  
+
+
+
+                  
+                  &:hover {
+                  color:$primay-red
+
+                  }
+               }
             }
          
